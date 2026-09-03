@@ -56,7 +56,7 @@ if submit_btn:
 
                 # Call Groq API
                 completion = client.chat.completions.create(
-                    model="llama3-8b-8192",
+                    model="openai/gpt-oss-20b",
                     messages=[{"role": "user", "content": prompt}],
                     temperature=0.7,
                 )
